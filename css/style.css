@@ -457,12 +457,18 @@ img {
         top: 30px;
         max-width: 100%;
     }
+    .optimisation__title {
+        font-size: 25px;
+    }
+    .optimisation__text + .optimisation__text {
+        margin-top: 10px;
+    }
     .experience__wrapper {
         flex-direction: column;
         align-items: center;
     }
     .experience__item + .experience__item {
-    margin-top: 30px;
+        margin-top: 30px;
     }
     .gift__descr {
         font-size: 25px;
@@ -476,13 +482,16 @@ img {
         display: block;
     }
 }
+@media screen and (max-width: 459px)  {
+    .optimisation {
+            min-height: 700px;
+        }
+}
 
 @media screen and (max-width: 344px) {
     .btn {
         font-size: 18px;
         margin-bottom: 70px;
     }
-    .optimization {
-        min-height: 830px;
-    }
+    
 }
