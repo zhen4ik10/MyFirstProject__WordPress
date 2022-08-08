@@ -1,3 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoThin';
+    src: url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url("../fonts/Roboto/Roboto-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -51,7 +103,7 @@ img {
 }
 
 .header__logo-text {
-    font-weight: 500;
+    font-family: 'RobotoMedium';
     font-size: 15px;
     line-height: 24px;
     text-transform: uppercase;
@@ -59,7 +111,7 @@ img {
 }
 
 .header__subtitle {
-    font-weight: 900;
+    font-family: 'RobotoBlack';
     font-size: 41px;
     line-height: 41px;
     text-transform: uppercase;
@@ -68,7 +120,7 @@ img {
     text-align: center;
 }
 .header__title {
-    font-weight: 900;
+    font-family: 'RobotoBlack';
     font-size: 80px;
     line-height: 80px;
     text-transform: uppercase;
@@ -90,17 +142,17 @@ img {
 
 .header__title::before {
     top: 50%;
-    left: -55%;
+    left: -60%;
 }
 
 .header__title::after {
     top: 50%;
-    right: -55%;
+    right: -60%;
 }
 
 .header__text {
+    font-family: 'RobotoLight';
     text-align: center;
-    font-weight: 300;
     font-size: 21px;
     line-height: 28px;
     color: #FFFFFF;
@@ -108,13 +160,14 @@ img {
 }
 
 .header__text span {
-    font-weight: 700;
+    font-family: 'RobotoBold';
     font-size: 21px;
     line-height: 28px;
     color: #F9BF3B;
 }
 
 .btn {
+    font-family: 'RobotoCondensed';
     background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     border: none;
@@ -130,7 +183,7 @@ img {
 }
 
 .header__descr-arrow {
-    font-weight: 100;
+    font-family: 'RobotoThin';
     font-size: 15px;
     line-height: 24px;
     text-transform: uppercase;
@@ -144,7 +197,7 @@ img {
 }
 
 .title {
-    font-weight: 400;
+    font-family: 'RobotoRegular';
     font-size: 30px;
     line-height: 1em;
     text-align: center;
@@ -163,7 +216,7 @@ img {
 }
 
 .waiting__descr {
-    font-weight: 400;
+    font-family: 'RobotoRegular';
     font-size: 23px;
     line-height: 20px;
     text-align: center;
@@ -189,7 +242,7 @@ img {
     margin-bottom: 26px;
 }
 .waiting__item-descr {
-    font-weight: 300;
+    font-family: 'RobotoLight';
     font-size: 15px;
     line-height: 21px;
     text-align: center;
@@ -219,7 +272,7 @@ img {
     max-width: 773px;
 }
 .optimisation__title {
-    font-weight: 900;
+    font-family: 'RobotoBlack';
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -230,7 +283,7 @@ img {
     max-width: 770px;
 }
 .optimisation__text {
-    font-weight: 300;
+    font-family: 'RobotoLight';
     font-size: 17px;
     line-height: 27px;
     color: #4A4A4A;
@@ -241,7 +294,7 @@ img {
 }
 
 .t--black {
-    font-weight: 700;
+    font-family: 'RobotoBold';
 }
 
 .experience {
@@ -283,8 +336,8 @@ img {
 }
 
 .experience__descr {
+    font-family: 'RobotoLight';
     margin-top: 25px;
-    font-weight: 300;
     font-size: 17px;
     line-height: 20px;
     text-align: center;
@@ -302,8 +355,8 @@ img {
 }
 
 .gift__descr {
+    font-family: 'RobotoRegular';
     max-width: 1160px;
-    font-weight: 400;
     font-size: 30px;
     line-height: 43px;
     text-align: center;
@@ -326,8 +379,8 @@ img {
 }
 
 .webinar__text {
+    font-family: 'RobotoRegular';
     margin-top: 36px;
-    font-weight: 400;
     font-size: 30px;
     line-height: 1em;
     text-align: center;
@@ -336,8 +389,8 @@ img {
 }
 
 .webinar__start {
+    font-family: 'RobotoBlack';
     margin-top: 30px;
-    font-weight: 900;
     font-size: 36px;
     line-height: 1em;
     text-align: center;
@@ -346,8 +399,8 @@ img {
 }
 
 .webinar__descr {
+    font-family: 'RobotoRegular';
     margin-top: 25px;
-    font-weight: 400;
     font-size: 23px;
     line-height: 20px;
     text-align: center;
@@ -368,7 +421,7 @@ img {
 .footer__support,
 .footer__policy,
 .footer__phone {
-    font-weight: 300;
+    font-family: 'RobotoLight';
     font-size: 15px;
     line-height: 21px;
     text-align: center;
