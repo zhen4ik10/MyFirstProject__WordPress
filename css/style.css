@@ -81,6 +81,7 @@ img {
 }
 
 .header {
+    position: relative;
     padding: 40px 0 60px;
     background: url('../img/bg/main_bg.png') center center/cover no-repeat;
 }
@@ -166,21 +167,55 @@ img {
     color: #F9BF3B;
 }
 
+.center {
+    width: 285px;
+    height: 72px;
+    /* position: absolute; */
+    margin-bottom: 90px;
+}
+
 .btn {
-    font-family: 'RobotoCondensed';
+    position: absolute;
     background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     border: none;
     padding: 24px 15px;
+    max-width: 285px;
+    max-height: 72px;
+    outline: none;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 255 714;
+    stroke-dashoffset: 255;
+    transition: all 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: all 1s ease-in-out;
+    background: linear-gradient(0deg, #2798B9 50%, #166d86 100%);
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -714;
+}
+
+.btn span {
+    font-family: 'RobotoCondensed';
     font-size: 21px;
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
-    margin-bottom: 90px;
-    cursor: pointer;
-}
+} 
 
 .header__descr-arrow {
     font-family: 'RobotoThin';
@@ -345,7 +380,7 @@ img {
 }
 
 .gift {
-    padding: 88px 0;
+    padding: 88px 0 0;
     background-color: rgba(239, 239, 239, 1);
 }
 .gift__wrapper {
