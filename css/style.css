@@ -226,6 +226,14 @@ svg {
     margin-bottom: 5px;
 }
 
+.headaer__arrow-link {
+    transition: all .3s ease-in-out;
+}
+
+.headaer__arrow-link:hover {
+    transform: translateY(10px) scale(1.2);
+}
+
 .waiting { 
     padding: 90px 0 75px;
     background-color: rgba(239, 239, 239, 1);
@@ -462,6 +470,14 @@ svg {
     text-align: center;
     text-decoration-line: underline;
     color: #888888;
+    transition: all .3s ease-in-out;
+}
+
+.footer__support:hover,
+.footer__policy:hover,
+.footer__phone:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
 .footer__support::after {
@@ -473,6 +489,11 @@ svg {
 .footer__phone {
     margin-top: 5px;
     text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.footer__phone:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 991px) {
