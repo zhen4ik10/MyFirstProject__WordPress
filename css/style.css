@@ -524,6 +524,20 @@ svg {
         left: 225px;
         top: 30px;
     }
+
+    .experience__wrapper {
+        justify-content: center;
+    }
+
+    .experience__item {
+        flex-direction: row;
+        max-width: 100%;
+    }
+    .experience__descr {
+        margin-left: 25px;
+        margin-top: 0;
+        max-width: 234px;
+    }
     
 }
 
@@ -574,6 +588,17 @@ svg {
     .optimisation {
             min-height: 700px;
         }
+}
+
+@media screen and (max-width: 396px) {
+    .experience__item {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .experience__descr {
+        margin-left: 0;
+        margin-top: 25px;
+    }
 }
 
 @media screen and (max-width: 344px) {
